@@ -1,0 +1,106 @@
+<!-- 
+Bonjour, c'est Quentin Riquier,
+
+j'ai retouché intégralement le formulaire de l'entretien qui manquait de style !
+En y intégrant boostrap, quelques div et en mettant des labels (j'ai suivis les conseils)
+Même si l'entretien est passé, j'espère que vous apprécierez ,
+Bonne journée 
+-->
+
+
+
+
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="bootstrap.css">
+       
+    </head> 
+
+    <body>
+      <!-- il me semble que le <center></center> n'est plus beaucoup utilisé en html -->
+        <center> <h1>  <p>Formulaire </p> </h1> </center>
+
+    <div class="col-6">
+        <form method="POST" action="PHPform.php" >
+
+        
+                <legend> <p> Remplissez ces informations : </p> </legend>
+                
+
+            <div class="form-check">
+                <label class="civilite">
+                <input type="radio" class="form-check-input" name="civilite" id="optionsRadios1" value="homme" checked="">
+            homme
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="civilite">
+                <input type="radio" class="form-check-input" name="civilite" id="optionsRadios2" value="femme">
+            femme                
+                </label>
+            </div>
+
+
+            <div class="form-group">
+                <label for="prenom">Prénom : </label>
+                <input type="text" class="form-control" id="prenom" name="prenom" aria-describedby="prenom" placeholder="Votre prénom" required>
+            </div>
+            
+
+            <div class="form-group">
+                <label for="nom">Nom : </label>
+                <input type="text" class="form-control" id="nom" name="nom" aria-describedby="nom" placeholder="Votre nom" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email </label>
+                <input type="email" class="form-control" id="email" name="email" aria-describedby="emailHelp" placeholder="Entrer votre email" required>
+                <small id="emailHelp" class="form-text text-muted">L'email servira pour votre connexion !</small>
+            </div>
+
+            <br>
+            <div class="form-group">
+                <label for="commentaire" > Un petit commentaire ?</label>
+                <textarea class="form-control" id="commentaire" name="commentaire" rows="3" required></textarea>
+            </div>
+
+
+            <br>
+            <div class="form-group">
+                <label for="listeConnu">Comment avez vous connu le site :</label>
+                <select class="form-control" id="listeConnu" name="listeConnu">
+                <option>Google</option>
+                <option>Publicités</option>
+                <option>Autre</option>
+                </select>
+        </div>
+
+            
+        
+                
+        <!-- Recevoir ou non le mail -->
+            <div class="form-check">
+                <label class="copiecoche" name="copiecoche">
+                <input class="form-check-input" type="checkbox" value="ok" checked="" name="copiecoche">
+                Je veux recevoir un E-mail
+                </label>
+            </div>
+                    </div> <br><br>
+
+                    <button type="submit" class="btn btn-primary" name ="valider" id="valider" value="valider">Envoyer !</button>
+            
+
+        
+                    
+        </form>
+    </div>
+
+
+    </body>
+
+
+</html>
+<!-- 
+Merci d'avoir lu jusqu'au bout ! -->
