@@ -7,9 +7,9 @@ $db = new PDO('mysql:host=localhost;dbname=SFRdb', 'root', '');
 if(isset($_POST['valider']))
 { //si le bouton submit est cliqué
 	
-	$nom = $_POST['nom'];
-	$prenom = $_POST['prenom'];
-	$email = $_POST['email'];
+	$nom = htmlspecialchars($_POST['nom']);
+	$prenom = htmlspecialchars($_POST['prenom']);
+	$email = htmlspecialchars($_POST['email']);
 
 
 	if(!empty($_POST['commentaire'])){
