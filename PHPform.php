@@ -1,7 +1,7 @@
 <?php 
 
 // Connexion à la BDD : SFRdb
-$db = new PDO('mysql:host=localhost;dbname=SFRdb', 'root', '');
+$db = new PDO('mysql:host=localhost;dbname=sfrdb', 'root', '');
 
 
 if(isset($_POST['valider']))
